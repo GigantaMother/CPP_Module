@@ -3,7 +3,8 @@ Learning C++
 
 Status : progress
 
-Result : CPP_00: 100%
+Result : 
+         CPP_00: 100%
 
          CPP_01: 100%
          
@@ -21,7 +22,8 @@ Result : CPP_00: 100%
          
          CPP_08:  
 
-Time : CPP_00: 17.08 (1 day)
+Time : 
+       CPP_00: 17.08 (1 day)
 
        CPP_01: 18.08 - 19.08 (2 day)
        
