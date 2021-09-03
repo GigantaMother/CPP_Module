@@ -17,9 +17,9 @@ Result :
          
          CPP_05: 100%
          
-         CPP_06:  
+         CPP_06: 100%
          
-         CPP_07:  
+         CPP_07: 100% 
          
          CPP_08:  
 
@@ -37,9 +37,9 @@ Time :
        
        CPP_05: 30.08 - 31.08 (2 day) 
        
-       CPP_06:  
+       CPP_06: 1.09 (1 day) 
        
-       CPP_07:  
+       CPP_07: 2.09 (1 day) 
        
        CPP_08:
          
