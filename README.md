@@ -19,7 +19,7 @@ Result :
          
          CPP_06: 100%
          
-         CPP_07:  
+         CPP_07: 100% 
          
          CPP_08:  
 
@@ -39,7 +39,7 @@ Time :
        
        CPP_06: 1.09 (1 day) 
        
-       CPP_07:  
+       CPP_07: 2.09 (1 day) 
        
        CPP_08:
          
