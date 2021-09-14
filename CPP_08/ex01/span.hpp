@@ -12,9 +12,9 @@ class Span
 		std::vector<int>	_array;
 		unsigned int		_size;
 		unsigned int		_len;
-		bool 				_long;
+		bool 			_long;
 		long long int		_longest;
-		bool 				_short;
+		bool 			_short;
 		long long int		_shortest;
 
 		Span(void);
@@ -24,10 +24,10 @@ class Span
 		Span(const Span &span);
 		~Span(void);
 
-		void			printArr();
+		void		printArr();
 
-		void			addNumber(int number);
-		void			addNumber(std::vector<int>::iterator first, std::vector<int>::iterator last);
+		void		addNumber(int number);
+		void		addNumber(std::vector<int>::iterator first, std::vector<int>::iterator last);
 		long long int	shortestSpan(void);
 		long long int	longestSpan(void);
 
