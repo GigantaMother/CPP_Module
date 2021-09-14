@@ -42,6 +42,12 @@ std::string const &Character::getName(void) const
 
 void	Character::equip(AMateria *u)
 {
+	if (u == NULL)
+	{
+		std::cout << "error(null)" << std::endl;
+		return ;
+	}
+	std::cout << u << std::endl;
 	for(int i = 0; i < 4; i++)
 	{
 		if (this->_bag[i] == nullptr)
@@ -70,6 +76,11 @@ void	Character::unequip(int idx)
 
 void	Character::use(int idx, ICharacter &target)
 {
+	if ((void *)&target == NULL)
+	{
+		std::cout << "error(null)" << std::endl;
+		return ;
+	}
 	if (idx < 0 || idx > 3)
 		std::cout << this->_name << " wrong slot" << std::endl;
 	else if (this->_bag[idx] == nullptr)

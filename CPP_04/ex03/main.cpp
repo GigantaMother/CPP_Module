@@ -42,7 +42,14 @@ int main (void)
 	me->equip(tmp);
 	tmp = src->createMateria("ice");
 	me->equip(tmp);
+	print_revers("Создаём материю и даём персонажу: me(такой материи не существует)");
+	tmp = src->createMateria("iceee");
+	me->equip(tmp);
 	std::cout << "_________________________" << std::endl;
+	print_revers("Создаём персонажа: bob_fail");
+	ICharacter* bob_fail = NULL;
+	print_revers("Использование материи(неправильный персонаж)");
+	me->use(0, *bob_fail);
 	print_revers("Создаём персонажа: bob");
 	ICharacter* bob = new Character("bob");
 	print_revers("Использование материи");
