@@ -1,27 +1,7 @@
 # CPP_Module-
 Learning C++
 
-Status : progress
-
-Result :  
-
-         CPP_00: 100%
-
-         CPP_01: 100%
-         
-         CPP_02: 100% 
-         
-         CPP_03: 100%
-         
-         CPP_04: 100%
-         
-         CPP_05: 100%
-         
-         CPP_06: 100%
-         
-         CPP_07: 100% 
-         
-         CPP_08: 100% 
+[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/gmother/cpp-module-08)](https://github.com/JaeSeoKim/badge42)
 
 Time : 
 
