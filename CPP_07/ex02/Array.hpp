@@ -18,7 +18,7 @@ class Array
 		unsigned int	getSize(void) const;
 
 		Array			&operator=(const Array &copy);
-		T				&operator[](unsigned int index);
+		T			&operator[](unsigned int index);
 };
 
 template <typename T>
