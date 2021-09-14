@@ -1,7 +1,9 @@
 # CPP_Module-
 Learning C++
 
-[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/gmother/CppModule08)](https://github.com/JaeSeoKim/badge42)
+Status : finish
+
+Result : 100%
 
 Time : 
 
