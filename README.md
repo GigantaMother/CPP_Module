@@ -1,7 +1,7 @@
 # CPP_Module-
 Learning C++
 
-[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/gmother/CPP-Module-08)](https://github.com/JaeSeoKim/badge42)
+[![jaeskim's 42Project Score](https://badge42.herokuapp.com/api/project/gmother/cpp-module-08)](https://github.com/JaeSeoKim/badge42)
 
 Time : 
 
