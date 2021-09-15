@@ -9,7 +9,7 @@
 # define GREEN		"\033[32m"
 # define BLUE		"\033[34m"
 # define F_NONE		"\033[37m"
-# define YELLOW     "\033[33m"
+# define YELLOW		"\033[33m"
 
 class ClapTrap
 {
@@ -20,13 +20,13 @@ class ClapTrap
 		~ClapTrap(void);
 
 		void	attack(std::string const &target);
-		void takeDamage(unsigned int amount);
-		void beRepaired(unsigned int amount);
+		void	takeDamage(unsigned int amount);
+		void	beRepaired(unsigned int amount);
 
 		ClapTrap &operator=(ClapTrap const &clap);
 		
 	protected:
-		std::string _name;
+		std::string	_name;
 		int			_hitpoints;
 		int			_energyPoints;
 		int			_attackDamage;

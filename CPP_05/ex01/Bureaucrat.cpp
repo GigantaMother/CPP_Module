@@ -1,5 +1,17 @@
 #include "Bureaucrat.hpp"
 
+Bureaucrat::Bureaucrat():_name("(no)")
+{
+	int	grade = 0;
+
+	if (this->_grade > 150)
+		throw Bureaucrat::GradeTooLowException(this->_name + " constructor error");
+	else if (this->_grade < 1)
+		throw Bureaucrat::GradeTooHighException(this->_name + " constructor error");
+
+	this->_grade = grade;
+}
+
 Bureaucrat::Bureaucrat(std::string name, int grade):_name(name)
 {
 	std::cout << GREEN << name << " (Bureaucrat) constructor" << DEFAULT << std::endl;
@@ -8,7 +20,7 @@ Bureaucrat::Bureaucrat(std::string name, int grade):_name(name)
 		throw Bureaucrat::GradeTooLowException(this->_name + " constructor error");
 	else if (grade < 1)
 		throw Bureaucrat::GradeTooHighException(this->_name + " constructor error");
-		
+
 	this->_grade = grade;
 }
 

@@ -48,8 +48,8 @@ Array<T>::Array(const Array &copy)
 	//std::cout << "copy" << std::endl;
 	this->_size = copy.getSize();
 	this->_array = new T[this->_size];
-    for (unsigned int i = 0; i < this->_size; i++)
-    	this->_array[i] = copy._array[i];
+	for (unsigned int i = 0; i < this->_size; i++)
+		this->_array[i] = copy._array[i];
 }
 
 template <typename T>
@@ -73,12 +73,12 @@ Array<T>	&Array<T>::operator=(const Array &copy)
 {
 	//std::cout << "operator=" << std::endl;
 	if (this == copy)
-        return (this);
+		return (this);
 	this->_size = copy.getSize();
-    this->_array = new T[this->_size];
-    for (unsigned int i = 0; i < this->_size; i++) 
+	this->_array = new T[this->_size];
+	for (unsigned int i = 0; i < this->_size; i++) 
 		this->_array[i] = copy._array[i];
-    return (*this);
+	return (*this);
 }
 
 template <typename T>

@@ -24,14 +24,15 @@ class Form
 {
 	private:
 		const std::string	_name;
-		bool			_signed;
-		int			_gradeSigned;
-		int			_gradeDo;
+		bool				_signed;
+		int					_gradeSigned;
+		int					_gradeDo;
 		std::string 		_target;
 
 		virtual void	executedAll(void) const = 0;
 
 	public:
+		Form(void);
 		Form(std::string name, int gradeSigned, int gradeDo, std::string target);
 		Form(Form const &f);
 		virtual ~Form(void);

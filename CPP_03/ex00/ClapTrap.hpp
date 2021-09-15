@@ -17,18 +17,18 @@ class ClapTrap
 		int			_hitpoints;
 		int			_energyPoints;
 		int			_attackDamage;
-		
+
 	public:
 		ClapTrap(void);
 		ClapTrap(std::string name);
 		ClapTrap(ClapTrap const &clap);
 		~ClapTrap(void);
 
-		void	attack(std::string const &target);
-		void takeDamage(unsigned int amount);
-		void beRepaired(unsigned int amount);
+		void		attack(std::string const &target);
+		void		takeDamage(unsigned int amount);
+		void		beRepaired(unsigned int amount);
 
-		ClapTrap &operator=(ClapTrap const &clap);
+		ClapTrap	&operator=(ClapTrap const &clap);
 };
 
 # endif

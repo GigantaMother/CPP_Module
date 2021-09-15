@@ -1,10 +1,10 @@
 #ifndef SPAN_HPP
-#define SPAN_HPP
+# define SPAN_HPP
 
-#include <iostream>
+# include <iostream>
 
-#include <vector>
-#include <algorithm>
+# include <vector>
+# include <algorithm>
 
 class Span
 {
@@ -12,9 +12,9 @@ class Span
 		std::vector<int>	_array;
 		unsigned int		_size;
 		unsigned int		_len;
-		bool 			_long;
+		bool 				_long;
 		long long int		_longest;
-		bool 			_short;
+		bool 				_short;
 		long long int		_shortest;
 
 		Span(void);
@@ -26,14 +26,14 @@ class Span
 
 		void		printArr();
 
-		void		addNumber(int number);
-		void		addNumber(std::vector<int>::iterator first, std::vector<int>::iterator last);
+		void			addNumber(int number);
+		void			addNumber(std::vector<int>::iterator first, std::vector<int>::iterator last);
 		long long int	shortestSpan(void);
 		long long int	longestSpan(void);
 
 		Span &operator=(const Span &span);
 
-		class SpanException : public std::exception
+		class SpanException: public std::exception
 		{
 			private:
 				std::string _error;
@@ -44,4 +44,4 @@ class Span
 		};
 };
 
-#endif
+# endif

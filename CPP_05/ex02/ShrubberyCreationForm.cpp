@@ -1,5 +1,10 @@
 #include "ShrubberyCreationForm.hpp"
 
+ShrubberyCreationForm::ShrubberyCreationForm(): Form()	
+{
+	std::cout << GREEN << "(ShrubberyCreationForm) constructor" << DEFAULT << std::endl;
+}
+
 ShrubberyCreationForm::ShrubberyCreationForm(std::string const &target): Form("ShrubberyCreationForm", 145, 137, target)	
 {
 	std::cout << GREEN << "(ShrubberyCreationForm) constructor" << DEFAULT << std::endl;

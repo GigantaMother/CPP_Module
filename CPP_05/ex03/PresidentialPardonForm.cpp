@@ -1,5 +1,10 @@
 #include "PresidentialPardonForm.hpp"
 
+PresidentialPardonForm::PresidentialPardonForm(): Form()	
+{
+	std::cout << GREEN << "(PresidentialPardonForm) constructor" << DEFAULT << std::endl;
+}
+
 PresidentialPardonForm::PresidentialPardonForm(std::string const &target): Form("PresidentialPardonForm", 25, 5, target)	
 {
 	std::cout << GREEN << "(PresidentialPardonForm) constructor" << DEFAULT << std::endl;

@@ -1,7 +1,7 @@
 #ifndef FLAGTRAP_H
 # define FLAGTRAP_H
 
-#include "ClapTrap.hpp"
+# include "ClapTrap.hpp"
 
 class FragTrap: virtual public ClapTrap
 {
@@ -11,10 +11,10 @@ class FragTrap: virtual public ClapTrap
 		FragTrap(FragTrap const &frag);
 		~FragTrap(void);
 
-		void attack(std::string const &target);
-		void highFivesGuys(void);
+		void		attack(std::string const &target);
+		void		highFivesGuys(void);
 
-		FragTrap &operator=(FragTrap const &frag);
+		FragTrap	&operator=(FragTrap const &frag);
 };
 
 # endif

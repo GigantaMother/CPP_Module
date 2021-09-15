@@ -3,7 +3,6 @@
 #include "FragTrap.hpp"
 #include "DiamondTrap.hpp"
 
-
 int main(void)
 {
 	std::cout << "________________" << std::endl;

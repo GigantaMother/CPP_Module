@@ -1,7 +1,7 @@
 #ifndef SCAVTRAP_H
 # define SCAVTRAP_H
 
-#include "ClapTrap.hpp"
+# include "ClapTrap.hpp"
 
 class ScavTrap: virtual public ClapTrap
 {
@@ -11,10 +11,10 @@ class ScavTrap: virtual public ClapTrap
 		ScavTrap(ScavTrap const &scav);
 		~ScavTrap(void);
 
-		void attack(std::string const &target);
-		void guardGate(void);
+		void		attack(std::string const &target);
+		void		guardGate(void);
 
-		ScavTrap &operator=(ScavTrap const &scav);
+		ScavTrap	&operator=(ScavTrap const &scav);
 };
 
 # endif

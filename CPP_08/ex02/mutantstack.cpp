@@ -11,8 +11,8 @@ typename MutantStack<T>::const_iterator MutantStack<T>::begin() const
 {
 	return (this->c.begin());
 }
-        
-template<typename T>		
+
+template<typename T>
 typename MutantStack<T>::iterator MutantStack<T>::end()
 {
 	return (this->c.end());
@@ -36,7 +36,7 @@ typename MutantStack<T>::const_reverse_iterator MutantStack<T>::rbegin() const
 	return (this->c.rbegin());
 }
 
-template<typename T>        
+template<typename T>
 typename MutantStack<T>::reverse_iterator MutantStack<T>::rend()
 {
 	return (this->c.rend());
@@ -48,13 +48,13 @@ typename MutantStack<T>::const_reverse_iterator MutantStack<T>::rend() const
 	return (this->c.rend());
 } 
 
-template <typename T> 
+template <typename T>
 MutantStack<T>::MutantStack(void): std::stack<T>(){};
 
-template <typename T> 
+template <typename T>
 MutantStack<T>::MutantStack(const MutantStack& copy): std::stack<T>(copy){};
 
-template <typename T> 
+template <typename T>
 MutantStack<T>::~MutantStack(){};
 
 template <typename T> 

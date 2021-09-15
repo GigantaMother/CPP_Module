@@ -31,7 +31,7 @@ Span::~Span(void){}
 void	Span::printArr()
 {
 	for (std::vector<int>::iterator i = this->_array.begin(); i < this->_array.end(); i++)
-    	std::cout << *i << " ";
+		std::cout << *i << " ";
 	std::cout << std::endl;
 }
 

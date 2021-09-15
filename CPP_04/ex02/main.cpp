@@ -8,9 +8,7 @@ int main (void)
 	std::cout << "_________________________" << std::endl;
 	std::cout << "___________Test__________" << std::endl;
 	std::cout << "_________________________" << std::endl;
-	// const Animal* meta = new Animal();
-	// std::cout << meta->getType() << std::endl;
-	// meta->makeSound();
+	//const Animal* meta = new Animal();
 	std::cout << "_________________________" << std::endl;
 	const Animal* j = new Dog();
 	std::cout << j->getType() << std::endl;
@@ -30,7 +28,6 @@ int main (void)
 	std::cout << "_________________________" << std::endl;
 	std::cout << "_______Destructed________" << std::endl;
 	std::cout << "_________________________" << std::endl;
-	//delete meta;
 	delete j;
 	delete i;
 	delete j_copy;

@@ -1,8 +1,9 @@
 #ifndef DOG_H
-#define DOG_H
-#include "Animal.hpp"
+# define DOG_H
 
-class Dog : public Animal
+# include "Animal.hpp"
+
+class Dog: public Animal
 {
 	private:
 		Brain * DogBrain;
@@ -11,9 +12,9 @@ class Dog : public Animal
 		Dog(Dog const &d);
 		virtual ~Dog(void);
 
-		virtual void makeSound(void) const;
+		virtual void	makeSound(void) const;
 
-		Dog& operator=(Dog const &d);
+		Dog				&operator=(Dog const &d);
 };
 
-#endif
+# endif

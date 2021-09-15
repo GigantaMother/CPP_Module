@@ -1,5 +1,24 @@
 #include "Form.hpp"
 
+Form::Form():_name("(no)")
+{
+	int	gradeSigned = 0;
+	int	gradeDo = 0;
+
+	if (gradeSigned > 150)
+		throw Form::GradeTooLowException(this->_name + " Constructor error");
+	else if (gradeSigned < 1)
+		throw Form::GradeTooHighException(this->_name + " Constructor error");
+	if (gradeDo > 150)
+		throw Form::GradeTooLowException(this->_name + " Constructor error");
+	else if (gradeDo < 1)
+		throw Form::GradeTooHighException(this->_name + " Constructor error");
+
+	this->_signed = 0;
+	this->_gradeSigned = gradeSigned;
+	this->_gradeDo = gradeDo;
+}
+
 Form::Form(std::string name, int gradeSigned, int gradeDo, std::string target):_name(name)
 {
 	std::cout << GREEN << name << " (Form) constructor" << DEFAULT << std::endl;

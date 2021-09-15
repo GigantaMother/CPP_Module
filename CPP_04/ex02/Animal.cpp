@@ -23,12 +23,6 @@ std::string const &Animal::getType(void) const
 	return (this->type);
 }
 
-// void Animal::makeSound(void) const
-// {
-// 	std::cout << YELLOW << "Basic sound" << DEFAULT << std::endl;
-// 	return ;
-// }
-
 Animal &Animal::operator=(Animal const &a)
 {
 	this->type = a.type;

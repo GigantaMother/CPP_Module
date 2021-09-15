@@ -1,7 +1,7 @@
 #ifndef CURE_H
-#define CURE_H
+# define CURE_H
 
-#include "AMateria.hpp"
+# include "AMateria.hpp"
 
 class Cure: public AMateria
 {
@@ -14,4 +14,4 @@ class Cure: public AMateria
 		virtual void		use(ICharacter &target);
 };
 
-#endif
+# endif

@@ -1,9 +1,9 @@
 #ifndef ICHARACTER_H
-#define ICHARACTER_H
+# define ICHARACTER_H
 
-#include <iostream>
-#include <string>
-#include "AMateria.hpp"
+# include <iostream>
+# include <string>
+# include "AMateria.hpp"
 
 class ICharacter
 {
@@ -15,4 +15,4 @@ class ICharacter
 		virtual void use(int idx, ICharacter& target) = 0;
 };
 
-#endif
+# endif

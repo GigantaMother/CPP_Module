@@ -16,6 +16,8 @@ int	strIsdigit(char	*str, int *count)
 			*count = *count + 1;
 		if (str[i] == '.')
 		{
+			if (f == true)
+				return (0);
 			accuracy = true;
 			if (point == false)
 				point = true;
@@ -29,12 +31,14 @@ int	strIsdigit(char	*str, int *count)
 			else
 				return (0);
 		}
-		else if ((str[i] == '+' || str[i] == '-'))
+		else if (str[i] == '+' || str[i] == '-')
 		{
 			if (i != 0)
 				return (0);
 		}
 		else if (isdigit(str[i]) == 0)
+			return (0);
+		else if (f == true)
 			return (0);
 	}
 	return (1);
@@ -75,7 +79,7 @@ void printSpec(char	*str)
 {
 	int i = 5;
 
-	if ((strlen(str) == 5))
+	if (strlen(str) == 5)
 		i = 4;
 	if (str[0] == 'n')
 		i = 3;
@@ -108,7 +112,6 @@ void	printNum(char *str)
 		std::cout << std::fixed << std::setprecision(1) << "double: " << d << std::endl;
 		return ;
 	}
-
 	if (strIsdigit(str, &accuracy))
 	{
 		marker = 1;
@@ -116,7 +119,6 @@ void	printNum(char *str)
 	}
 	else
 		marker = 0;
-
 
 	if (accuracy == 0)
 		accuracy++;

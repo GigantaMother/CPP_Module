@@ -1,19 +1,19 @@
 #ifndef FORM_H
-#define FORM_H
+# define FORM_H
 
-#define DEFAULT		"\033[0m"
-#define BOLD		"\033[1m"
-#define UNDERLINE	"\033[4m"
-#define REVERS		"\033[7m"
-#define RED			"\033[31m"
-#define GREEN		"\033[32m"
-#define YELLOW		"\033[33m"
-#define BLUE		"\033[34m"
-#define	AQUA		"\033[36m"
+# define DEFAULT	"\033[0m"
+# define BOLD		"\033[1m"
+# define UNDERLINE	"\033[4m"
+# define REVERS		"\033[7m"
+# define RED		"\033[31m"
+# define GREEN		"\033[32m"
+# define YELLOW		"\033[33m"
+# define BLUE		"\033[34m"
+# define AQUA		"\033[36m"
 
-#include <iostream>
-#include <string>
-#include <exception>
+# include <iostream>
+# include <string>
+# include <exception>
 
 # include "Bureaucrat.hpp"
 
@@ -29,6 +29,7 @@ class Form
 		int					_gradeDo;
 
 	public:
+		Form(void);
 		Form(std::string name, int gradeSigned, int gradeDo);
 		Form(Form const &f);
 		~Form(void);
@@ -37,8 +38,7 @@ class Form
 		bool				getSigned(void) const;
 		int					getGradeSigned(void) const;
 		int					getGradeDo(void) const;
-
-		void                beSigned(Bureaucrat const &bur);
+		void				beSigned(Bureaucrat const &bur);
 
 		Form				&operator=(Form const &f);
 
@@ -68,4 +68,4 @@ class Form
 
 std::ostream &operator<<(std::ostream &out, const Form &f);
 
-#endif
+# endif

@@ -5,15 +5,16 @@
 
 class PresidentialPardonForm: public Form
 {
-    private:
-        void	executedAll(void) const;
+	private:
+		void	executedAll(void) const;
 
-    public:
-        PresidentialPardonForm(std::string const &target);
-        PresidentialPardonForm(const PresidentialPardonForm &copy);
-        virtual ~PresidentialPardonForm(void);
+	public:
+		PresidentialPardonForm(void);
+		PresidentialPardonForm(std::string const &target);
+		PresidentialPardonForm(const PresidentialPardonForm &copy);
+		virtual ~PresidentialPardonForm(void);
 
-        PresidentialPardonForm &operator=(const PresidentialPardonForm &f);
+		PresidentialPardonForm &operator=(const PresidentialPardonForm &f);
 };
 
-#endif
+# endif

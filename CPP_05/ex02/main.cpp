@@ -16,7 +16,7 @@ int main (void)
 	std::cout << "______________Create______________" << std::endl;
 	std::cout << "__________________________________" << std::endl;
 	ShrubberyCreationForm	a1("tree.txt");
-	RobotomyRequestForm	  	a2("Carl");
+	RobotomyRequestForm		a2("Carl");
 	PresidentialPardonForm	a3("ME");
 
 	Bureaucrat 				b1("Albert De Salvo", 150);

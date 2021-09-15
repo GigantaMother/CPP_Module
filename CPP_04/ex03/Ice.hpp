@@ -1,7 +1,7 @@
 #ifndef ICE_H
-#define ICE_H
+# define ICE_H
 
-#include "AMateria.hpp"
+# include "AMateria.hpp"
 
 class Ice: public AMateria
 {
@@ -14,4 +14,4 @@ class Ice: public AMateria
 		virtual void		use(ICharacter &target);
 };
 
-#endif
+# endif
