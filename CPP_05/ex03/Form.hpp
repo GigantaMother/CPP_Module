@@ -5,7 +5,7 @@
 #define BOLD		"\033[1m"
 #define UNDERLINE	"\033[4m"
 #define REVERS		"\033[7m"
-#define RED			"\033[31m"
+#define RED		"\033[31m"
 #define GREEN		"\033[32m"
 #define YELLOW		"\033[33m"
 #define BLUE		"\033[34m"
@@ -24,9 +24,9 @@ class Form
 {
 	private:
 		const std::string	_name;
-		bool				_signed;
-		int					_gradeSigned;
-		int					_gradeDo;
+		bool			_signed;
+		int			_gradeSigned;
+		int			_gradeDo;
 		std::string 		_target;
 
 		virtual void	executedAll(void) const = 0;
@@ -37,15 +37,15 @@ class Form
 		virtual ~Form(void);
 
 		const std::string	&getName(void) const;
-		bool				getSigned(void) const;
-		int					getGradeSigned(void) const;
-		int					getGradeDo(void) const;
+		bool			getSigned(void) const;
+		int			getGradeSigned(void) const;
+		int			getGradeDo(void) const;
 		const std::string	&getTarget(void) const;
 
-		void                beSigned(Bureaucrat const &bur);
-		void                execute(Bureaucrat const &executor) const;
+		void                	beSigned(Bureaucrat const &bur);
+		void                	execute(Bureaucrat const &executor) const;
 
-		Form				&operator=(Form const &f);
+		Form			&operator=(Form const &f);
 
 		class GradeTooHighException: public std::exception
 		{
